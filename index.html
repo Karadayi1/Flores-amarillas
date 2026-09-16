@@ -1305,12 +1305,36 @@
         }
 
         @media (max-width: 700px) {
-          .star-writer {
-            top: 12%;
-            height: 18vmin;
+          .night {
+            filter: none;
           }
-          .kazumy-text {
-            font-size: 82px;
+          .music-bar {
+            backdrop-filter: none;
+          }
+          .yellow-particle:nth-child(n+9) {
+            display: none;
+          }
+          .shooting-star:nth-child(n+5) {
+            display: none;
+          }
+          .flower__light {
+            animation: none !important;
+            opacity: 0.5;
+          }
+          .flower__grass,
+          .flower__grass__leaf {
+            animation: none !important;
+          }
+          .flowers,
+          .flower,
+          .flower__leafs,
+          .flower__line {
+            will-change: transform;
+          }
+          .kazumy-svg,
+          .top-svg {
+            filter: none;
+            will-change: transform;
           }
         }
     </style>
